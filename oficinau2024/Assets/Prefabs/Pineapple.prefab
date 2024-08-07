@@ -228,6 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collected: {fileID: 1169381336290891266}
+  Score: 15
 --- !u!58 &305587431809076720
 CircleCollider2D:
   m_ObjectHideFlags: 0
