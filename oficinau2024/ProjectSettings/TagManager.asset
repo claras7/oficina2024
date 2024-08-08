@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Spike
   - LinhaChegada
+  - Chain
   layers:
   - Default
   - TransparentFX
