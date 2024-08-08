@@ -78,6 +78,7 @@ public class Player : MonoBehaviour
             noAr = false;
             anim.SetBool("jump", false);
         }
+        
         if(collision.gameObject.tag == "Spike")
         {
             GameController.instance.GameOver();
@@ -85,11 +86,7 @@ public class Player : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if(collision.gameObject.tag == "LinhaChegada")
-        {
-            GameController.instance.nextLevel();
-            
-        }
+
     }
     void OnCollisionExit2D(Collision2D collision)
     {

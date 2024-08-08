@@ -9,7 +9,6 @@ public class GameController : MonoBehaviour
     public float totalScore;
     public Text scoreText;
     public GameObject gameOver;
-    public GameObject Next;
     public static GameController instance;
     
     void Start()
@@ -22,14 +21,6 @@ public class GameController : MonoBehaviour
         scoreText.text = totalScore.ToString();
     }
     
-    public void nextLevel()
-    {
-        Next.SetActive(true);
-    }
-    public void Continuar(string lvlN)
-    {
-        SceneManager.LoadScene(lvlN);
-    }
     public void GameOver()
     {
         gameOver.SetActive(true);
