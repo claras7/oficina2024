@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour
     public float totalScore;
     public Text scoreText;
     public GameObject gameOver;
+    public GameObject next;
     public static GameController instance;
     
     void Start()
@@ -29,5 +30,10 @@ public class GameController : MonoBehaviour
     public void Recomecar(string lvlN)
     {
         SceneManager.LoadScene(lvlN);
+    }
+
+    public void NextLevel()
+    {
+       next. SetActive(true);
     }
 }
