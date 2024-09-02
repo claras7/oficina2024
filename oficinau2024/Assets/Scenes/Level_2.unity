@@ -1927,8 +1927,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 592.2, y: 251.4}
-  m_SizeDelta: {x: 92.3227, y: 62.4622}
+  m_AnchoredPosition: {x: -387, y: 196}
+  m_SizeDelta: {x: 95.6982, y: 35.4572}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &186994443
 MonoBehaviour:
@@ -1952,7 +1952,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_FontSize: 25
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -4529,6 +4529,7 @@ GameObject:
   - component: {fileID: 1151822876}
   - component: {fileID: 1151822878}
   - component: {fileID: 1151822877}
+  - component: {fileID: 1151822879}
   m_Layer: 5
   m_Name: Pineapple
   m_TagString: Untagged
@@ -4552,8 +4553,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 659.1, y: 261.8}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -460, y: 207}
+  m_SizeDelta: {x: 87.543, y: 93.2488}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1151822877
 MonoBehaviour:
@@ -4593,6 +4594,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151822875}
   m_CullTransparentMesh: 1
+--- !u!95 &1151822879
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151822875}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e2270c28ebbf85b47b5ea716b3dc5be4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1177717880
 PrefabInstance:
   m_ObjectHideFlags: 0
