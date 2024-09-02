@@ -11,6 +11,7 @@ public class NewBehaviourScript : MonoBehaviour
     private AudioSource _audioSorce;
     private string mensagemOriginal;
     public bool imprimindo;
+    public float tempoentreLetras = 0.08f;
 
     private void Awake()
     {
@@ -22,17 +23,23 @@ public class NewBehaviourScript : MonoBehaviour
     }
     private void OnEnable()
     {
-
+        ImprimirMensagem(mensagemOriginal);
     }
     private void OnDisable()
     {
         componenteTexto.text = mensagemOriginal;
-
+        StopAllCoroutines();
     }
 
     public void ImprimirMensagem(string mensagem)
     {
 
+        if(gameObject.activeInHierarchy)
+        {
+            if(imprimindo) return;
+            imprimindo = true;
+            StartCoroutine(LetraPorLetra(mensagem));
+        }
     }
 
     IEnumerator LetraPorLetra(string mensagem)
@@ -43,9 +50,11 @@ public class NewBehaviourScript : MonoBehaviour
             msg += letra;
             componenteTexto.text = msg;
             _audioSorce.Play();
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(tempoentreLetras);
 
         }
+        imprimindo = false;
+        StopAllCoroutines();
         
     }
 }
