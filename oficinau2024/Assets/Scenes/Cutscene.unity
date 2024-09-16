@@ -1330,7 +1330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 864dadf5c38ea8641a9eb0e3a809391f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CenaParaCarregar: Cutscene
+  CenaParaCarregar: level_1
 --- !u!224 &1730858005
 RectTransform:
   m_ObjectHideFlags: 0
